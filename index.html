@@ -1,96 +1,124 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Food Recipe</title>
+    <title>My Food Recipe</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Internal CSS -->
     <style>
-        .center {
-            text-align: center;
-        }
-
-        table {
-            border-collapse: collapse;
-            margin: auto;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-            padding: 5px;
+        h1 {
+            background-color: blue;
+            color: white;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- Inline CSS -->
-<h1 class="center" style="background-color: orange; padding: 10px;">
-    FOOD RECIPE
-</h1>
+<!-- HEADER -->
+<div class="container">
+    <h1>Welcome to My Food Recipe Website</h1>
+    <p>
+    In this site you will find delicious meals to cook at home.
+    These recipes are easy to follow and perfect for beginners.
+    </p>
+</div>
 
-<p class="center">
-Welcome to my website where we learn about food recipes!<br>
-I hope you enjoy my work and stay tuned for every step in the world of food.<br>
-I love creating new and amazing food recipes for you to enjoy.
-</p>
+<!-- SPECIAL PARAGRAPHS (BROUGHT TO TOP) -->
+<div class="container">
 
-<div class="center">
+    <p><b>Cinnamon Chicken is a sweet and spicy dish loved by many.</b></p>
 
-    <!-- 5 Image Containers -->
-    <div class="container">
-        <img src="https://via.placeholder.com/200" width="200">
-        <p>Pancakes</p>
-    </div>
+    <p><mark>Fresh ingredients improve the taste of every recipe.</mark></p>
 
-    <div class="container">
-        <img src="https://via.placeholder.com/200" width="200">
-        <p>Tea</p>
-    </div>
-
-    <div class="container">
-        <img src="https://via.placeholder.com/200" width="200">
-        <p>Pizza</p>
-    </div>
-
-    <div class="container">
-        <img src="https://via.placeholder.com/200" width="200">
-        <p>Burger</p>
-    </div>
-
-    <div class="container">
-        <img src="https://via.placeholder.com/200" width="200">
-        <p>Salad</p>
-    </div>
+    <p>Use H<sub>2</sub>O when mixing spices and cook properly.</p>
 
 </div>
 
-<br>
+<!-- IMAGES SECTION -->
+<div class="container">
+    <h2>Delicious Food Images</h2>
 
-<!-- Pancake Recipe -->
-<h3 class="center">1. Pancakes</h3>
-<table>
-<tr><th>Ingredient</th><th>Quantity</th></tr>
-<tr><td>Flour</td><td>1 cup</td></tr>
-<tr><td>Milk</td><td>1 cup</td></tr>
-<tr><td>Egg</td><td>1</td></tr>
-</table>
+    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Sushi">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Salad">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pasta">
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Avocado Toast">
+    <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9" alt="Burger">
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Pancakes">
+</div>
 
-<br>
+<!-- VIDEOS SECTION -->
+<div class="container">
+    <h2>Cooking Videos</h2>
 
-<!-- Tea Recipe -->
-<h3 class="center">2. Tea</h3>
-<table>
-<tr><th>Ingredient</th><th>Quantity</th></tr>
-<tr><td>Water</td><td>1 cup</td></tr>
-<tr><td>Tea leaves</td><td>1 tsp</td></tr>
-<tr><td>Sugar</td><td>To taste</td></tr>
-</table>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/sGZ8wRh3OXo" allowfullscreen></iframe>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/yde2metFGpo" allowfullscreen></iframe>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/j_RE8pOK8DE" allowfullscreen></iframe>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/joweUxpHaqc" allowfullscreen></iframe>
+</div>
+
+<!-- CINNAMON TABLE -->
+<div class="container">
+    <h2>Ingredient of Cinnamon</h2>
+
+    <table>
+        <tr>
+            <th>Variety</th>
+            <th>Flavor Profile</th>
+            <th>Coumarin Level</th>
+        </tr>
+        <tr>
+            <td>Ceylon</td>
+            <td>Mild and sweet</td>
+            <td>Very Low</td>
+        </tr>
+        <tr>
+            <td>Cassia</td>
+            <td>Bold and spicy</td>
+            <td>High</td>
+        </tr>
+    </table>
+</div>
+
+<!-- NUTRITION TABLE -->
+<div class="container">
+    <h2>Nutritional Facts</h2>
+
+    <table>
+        <tr>
+            <th>Nutrient</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Calories</td>
+            <td>6.42 kcal</td>
+        </tr>
+        <tr>
+            <td>Fiber</td>
+            <td>1.4 g</td>
+        </tr>
+        <tr>
+            <td>Calcium</td>
+            <td>26.1 mg</td>
+        </tr>
+    </table>
+</div>
+
+<!-- FOOTER -->
+<div class="container">
+    <p>Recipe Collection © 2026</p>
+</div>
 
 </body>
 </html>
+
 
 
 
