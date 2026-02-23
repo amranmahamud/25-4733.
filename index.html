@@ -1,74 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CSS Sushi</title>
-<style>
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f4f1ea;
-  font-family: sans-serif;
-}
+   <title>My Food Recipe</title>
 
-.container {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
+   <!-- Internal CSS -->
+   <style>
+      body {
+         background-color: lightblue;
+         text-align: center;
+         font-family: Arial, sans-serif;
+      }
 
-.sushi {
-  position: relative;
-  width: 200px;
-  height: 120px;
-}
+      .container {
+         width: 300px;
+         padding: 15px;
+         margin: 20px auto;
+         border: 2px solid black;
+         text-align: center;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 2px 2px 10px gray;
+      }
 
-/* Rice */
-.rice {
-  position: absolute;
-  bottom: 0;
-  width: 200px;
-  height: 70px;
-  background: #fff;
-  border-radius: 50px 50px 40px 40px;
-}
+      img {
+         width: 100%;
+      }
 
-/* Salmon */
-.fish {
-  position: absolute;
-  top: 0;
-  width: 200px;
-  height: 80px;
-  background: linear-gradient(135deg, #ff7b5a, #ff6a4d, #ff8566);
-  border-radius: 60px 60px 40px 40px;
-}
+      table {
+         margin: 20px auto;
+      }
 
-/* Seaweed */
-.seaweed {
-  position: absolute;
-  top: 30px;
-  left: 85px;
-  width: 30px;
-  height: 90px;
-  background: #1f2d2a;
-  border-radius: 5px;
-}
-</style>
+      th, td {
+         padding: 8px;
+      }
+
+      blockquote {
+         margin: 30px auto;
+         padding: 20px;
+         width: 60%;
+         background-color: #f8f8f8;
+         border-left: 6px solid gold;
+         font-style: italic;
+         font-size: 20px;
+      }
+   </style>
+
+   <!-- External CSS -->
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="sushi">
-      <div class="fish"></div>
-      <div class="rice"></div>
-      <div class="seaweed"></div>
-    </div>
-  </div>
+
+   <!-- Inline CSS -->
+   <h1 style="text-align:center; color:darkblue;">
+       My Food Recipe
+   </h1>
+
+   <h2>Welcome to My Food Recipe Website</h2>
+
+   <p>
+      In this site you will find delicious meals to cook at home.
+      These recipes are easy to follow and perfect for beginners
+      who want to improve their cooking skills.
+   </p>
+
+   <h3>Delicious Food Images</h3>
+
+   <!-- 5 Image Containers -->
+   <div class="container">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+      alt="Fresh salad bowl">
+   </div>
+
+   <div class="container">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+      alt="Pasta dish">
+   </div>
+
+   <div class="container">
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
+      alt="Avocado toast">
+   </div>
+
+   <div class="container">
+      <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9"
+      alt="Burger with fries">
+   </div>
+
+   <div class="container">
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      alt="Pancakes">
+   </div>
+
+   <!-- Videos -->
+   <h4>How to make chicken</h4>
+   <div class="container">
+      <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/yde2metFGpo"
+      frameborder="0" allowfullscreen></iframe>
+   </div>
+
+   <h4>How to make omelet</h4>
+   <div class="container">
+      <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/j_RE8pOK8DE"
+      frameborder="0" allowfullscreen></iframe>
+   </div>
+
+   <h4>How to make sushi</h4>
+   <div class="container">
+      <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/joweUxpHaqc"
+      frameborder="0" allowfullscreen></iframe>
+   </div>
+
+   <hr>
+
+   <h4>Food Recipes</h4>
+
+   <p><b>Cinnamon Chicken is a sweet and spicy dish loved by many.</b></p>
+   <p><i>Sushi is a traditional Japanese food made with rice and fillings.</i></p>
+   <p><u>An omelet is a quick and healthy egg-based meal.</u></p>
+   <p>This recipe was updated on 15<sup>th</sup> January 2026.</p>
+   <p>Use H<sub>2</sub>O when mixing spices and cook at temperature &gt; 160°C.</p>
+   <p><strike>Do not use stale chicken or old eggs.</strike></p>
+   <p><mark>Fresh ingredients improve the taste of every recipe.</mark></p>
+   <p><q>Good food brings people together.</q></p>
+
+   <blockquote>
+      Cooking is not just about ingredients and measurements;
+      it’s about love, creativity, and the joy of sharing a delicious meal.
+   </blockquote>
+
+   <hr>
+
+   <h4>Recipe Steps</h4>
+
+   <p>
+      Cinnamon Chicken – Marinate chicken<br>
+      Sushi – Prepare rice<br>
+      Omelet – Beat eggs<br>
+      Cook and serve hot
+   </p>
+
+   <h4>Unordered List – Ingredients</h4>
+   <ul>
+      <li>Chicken</li>
+      <li>Cinnamon powder</li>
+      <li>Rice</li>
+      <li>Eggs</li>
+      <li>Vegetables</li>
+   </ul>
+
+   <h4>Ordered List – Cooking Steps</h4>
+   <ol>
+      <li>Prepare ingredients</li>
+      <li>Marinate chicken</li>
+      <li>Cook rice</li>
+      <li>Fry omelet</li>
+      <li>Serve food</li>
+   </ol>
+
+   <h3>Nutrition Table</h3>
+
+   <table border="1">
+      <tr>
+         <th>Calories</th>
+         <th>Protein</th>
+         <th>Fat</th>
+         <th>Carbs</th>
+         <th>Fiber</th>
+      </tr>
+      <tr>
+         <td>250</td>
+         <td>20g</td>
+         <td>10g</td>
+         <td>30g</td>
+         <td>5g</td>
+      </tr>
+      <tr>
+         <td>220</td>
+         <td>18g</td>
+         <td>8g</td>
+         <td>28g</td>
+         <td>4g</td>
+      </tr>
+   </table>
+
+   <footer style="background-color:black; color:white; padding:15px;">
+      Recipe Collection © 2026
+   </footer>
+
 </body>
 </html>
+
 
 
 
