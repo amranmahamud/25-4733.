@@ -5,52 +5,32 @@
 
    <!-- Internal CSS -->
    <style>
-      body {
-         background-color: lightblue;
-         text-align: center;
-         font-family: Arial, sans-serif;
-      }
+      body { background-color: lightblue;}
 
       .container {
-         width: 320px;
-         padding: 15px;
-         margin: 20px auto;
-         border: 2px solid black;
-         background-color: white;
-         border-radius: 10px;
-         box-shadow: 2px 2px 10px gray;
+           width:300px;
+           padding:10px;
+           margin:20px auto;
+           border:2px solid black;
+           text-align:center;
       }
 
       img {
-         width: 100%;
+         width:100%;
       }
 
-      table {
-         width: 95%;
-         margin: 20px auto;
-         border-collapse: collapse;
+      /* ===== PROFESSOR ASSIGNMENT INTERNAL CSS ===== */
+      .internal-paragraph {
+          color: orange;
+          font-weight: bold;
       }
 
-      th, td {
-         border: 1px solid black;
-         padding: 8px;
+      .internal-highlight {
+          color: purple;
       }
 
-      blockquote {
-         margin: 30px auto;
-         padding: 20px;
-         width: 60%;
-         background-color: #f8f8f8;
-         border-left: 6px solid gold;
-         font-style: italic;
-         font-size: 18px;
-      }
-
-      footer {
-         background-color: black;
-         color: white;
-         padding: 15px;
-         margin-top: 20px;
+      .internal-building {
+          color: brown;
       }
    </style>
 
@@ -60,236 +40,172 @@
 
 <body>
 
-<h1 style="color:darkblue;">My Food Recipe</h1>
+<h1 style="text-align:center; color:darkblue;">
+"My Food Recipe"
+</h1>
 
 <h2>Welcome to My Food Recipe Website</h2>
-
 <p>
-In this site you will find delicious meals to cook at home.
-These recipes are easy to follow and perfect for beginners.
+In this site you will find delicious meals to cook at home. These recipe are easy to follow and perfect for beginner who want to improve their cooking skills.
 </p>
 
 <h3>Delicious Food Images</h3>
 
-<!-- 5 IMAGE CONTAINERS -->
 <div class="container">
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Salad">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Fresh salad bowl">
 </div>
 
 <div class="container">
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pasta">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pasta dish">
 </div>
 
 <div class="container">
-<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Toast">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Avocado toast">
 </div>
 
 <div class="container">
-<img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9" alt="Burger">
+<img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9" alt="Burger with fries">
 </div>
 
 <div class="container">
-<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" alt="Pizza">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Pancakes">
 </div>
 
 <hr>
 
-<!-- 4 VIDEOS -->
-<h3>How to make Chicken</h3>
-<div class="container">
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/yde2metFGpo"
-frameborder="0" allowfullscreen>
-</iframe>
-</div>
+<h3>How To Make Videos</h3>
 
-<h3>How to make Omelet</h3>
-<div class="container">
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/j_RE8pOK8DE"
-frameborder="0" allowfullscreen>
+<h4>How to make Chicken</h4>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/sGZ8wRh3OXo?si=jO4t6MaTD_rxeC-j"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-</div>
 
-<h3>How to make Sushi</h3>
-<div class="container">
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/joweUxpHaqc"
-frameborder="0" allowfullscreen>
+<h4>How to make Chicken (Another)</h4>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/yde2metFGpo?si=XOrqHSUhVvGKozrh"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-</div>
 
-<h3>How to make Pancakes</h3>
-<div class="container">
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/1APZ3uOSeeg"
-frameborder="0" allowfullscreen>
+<h5>How to make Omelet</h5>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/j_RE8pOK8DE?si=K-AtG7hob0PpzYyW"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-</div>
+
+<h5>How to make Sushi</h5>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/joweUxpHaqc?si=bMXu7bszMZ0GgbKT"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 
 <hr>
 
 <h3>Ingredient of Cinnamon</h3>
-
-<table>
-<tr style="background-color:#6f4e37; color:white;">
+<table border="1">
+<tr>
 <th>Variety</th>
-<th>Flavor Profile</th>
-<th>Coumarin Level</th>
-<th>Best Culinary Use</th>
+<th>Flavor</th>
+<th>Level</th>
+<th>Best Use</th>
 </tr>
-
 <tr>
-<td>Ceylon ("True")</td>
-<td>Mild, sweet, floral</td>
-<td>Very Low</td>
-<td>Desserts, Tea</td>
+<td>Ceylon</td>
+<td>Mild</td>
+<td>Low</td>
+<td>Desserts</td>
 </tr>
-
 <tr>
-<td>Cassia (Common)</td>
-<td>Bold, spicy</td>
+<td>Cassia</td>
+<td>Strong</td>
 <td>High</td>
-<td>Meat & Baking</td>
-</tr>
-
-<tr>
-<td>Saigon</td>
-<td>Very Sweet</td>
-<td>Highest</td>
-<td>Cinnamon Rolls</td>
+<td>Meat Dishes</td>
 </tr>
 </table>
-
-<h3>Nutritional Facts (Per Teaspoon)</h3>
-
-<table>
-<tr>
-<th>Nutrient</th>
-<th>Amount</th>
-</tr>
-<tr><td>Calories</td><td>6.42 kcal</td></tr>
-<tr><td>Fiber</td><td>1.4 g</td></tr>
-<tr><td>Calcium</td><td>26.1 mg</td></tr>
-<tr><td>Manganese</td><td>0.4 mg</td></tr>
-</table>
-
-<h3>Chemical Composition & Benefits</h3>
-
-<table>
-<tr style="background-color:#a0522d; color:white;">
-<th>Compound</th>
-<th>Concentration</th>
-<th>Benefit</th>
-</tr>
-
-<tr>
-<td>Cinnamaldehyde</td>
-<td>65% – 80%</td>
-<td>Provides aroma; antimicrobial</td>
-</tr>
-
-<tr>
-<td>Eugenol</td>
-<td>5% – 10%</td>
-<td>Anti-inflammatory</td>
-</tr>
-
-<tr>
-<td>Fiber & Calcium</td>
-<td>High</td>
-<td>Lowers cholesterol</td>
-</tr>
-</table>
-
-<h3>Ingredient of Chicken</h3>
-
-<table>
-<tr style="background-color:#e67e22; color:white;">
-<th>Step</th>
-<th>Method</th>
-<th>Pro Tip</th>
-</tr>
-
-<tr>
-<td>Cut</td>
-<td>Small dice or shredded</td>
-<td>Smaller pieces roll easily</td>
-</tr>
-
-<tr>
-<td>Seasoning</td>
-<td>Salt, Cinnamon, Mirin</td>
-<td>Marinate 10 mins</td>
-</tr>
-
-<tr>
-<td>Cooking</td>
-<td>Pan-seared or Poached</td>
-<td>Do not overcook</td>
-</tr>
-</table>
-
-<hr>
-
-<h3>Food Recipes</h3>
-
-<p><b>Cinnamon Chicken is a sweet and spicy dish loved by many.</b></p>
-<p><i>Sushi is a traditional Japanese food made with rice and fillings.</i></p>
-<p><u>An omelet is a quick and healthy egg-based meal.</u></p>
-<p>This recipe was updated on 15<sup>th</sup> January 2026.</p>
-<p>Use H<sub>2</sub>O when mixing spices and cook at temperature &gt; 160°C.</p>
-<p><strike>Do not use stale chicken or old eggs.</strike></p>
-<p><mark>Fresh ingredients improve the taste of every recipe.</mark></p>
-<p><q>Good food brings people together.</q></p>
-
-<blockquote>
-Cooking is not just about ingredients and measurements;
-it’s about love, creativity, and the joy of sharing a delicious meal.
-</blockquote>
 
 <hr>
 
 <h3>Unordered List – Ingredients</h3>
 <ul>
-<li>Chicken</li>
-<li>Cinnamon powder</li>
-<li>Rice</li>
-<li>Eggs</li>
-<li>Vegetables</li>
+    <li>Chicken</li>
+    <li>Cinnamon powder</li>
+    <li>Rice</li>
+    <li>Eggs</li>
+    <li>Vegetables</li>
 </ul>
 
 <h3>Ordered List – Cooking Steps</h3>
 <ol>
-<li>Prepare ingredients</li>
-<li>Marinate chicken</li>
-<li>Cook rice</li>
-<li>Fry omelet</li>
-<li>Serve food</li>
+    <li>Prepare ingredients</li>
+    <li>Marinate chicken</li>
+    <li>Cook rice</li>
+    <li>Fry omelet</li>
+    <li>Serve food</li>
 </ol>
 
-<footer>
-Recipe Collection © 2026
-</footer>
+<h3>Nested List</h3>
+<ul>
+    <li>Cinnamon Chicken
+        <ul>
+            <li>Marination</li>
+            <li>Cooking</li>
+        </ul>
+    </li>
+    <li>Sushi</li>
+    <li>Omelet</li>
+</ul>
+
+<hr>
+
+<!-- ================= PROFESSOR ASSIGNMENT ================= -->
+
+<h2>Professor Assignment Section</h2>
+
+<p style="color: blue; font-style: italic;">
+Paragraph 1
+</p>
+
+<p class="internal-paragraph">
+Paragraph 2
+</p>
+
+<p class="external-paragraph">
+Paragraph 3
+</p>
+
+<h1 style="color: red;">
+Highlight 1
+</h1>
+
+<h1 class="internal-highlight">
+Highlight 2
+</h1>
+
+<h1 class="external-highlight">
+Highlight 3
+</h1>
+
+<h3 style="color: green;">
+Building 1
+</h3>
+
+<h3 class="internal-building">
+Building 2
+</h3>
+
+<h3 class="external-building">
+Building 3
+</h3>
+
+<!-- ========================================================= -->
 
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<footer>
+<p>Recipe Collection © 2026</p>
+</footer>
